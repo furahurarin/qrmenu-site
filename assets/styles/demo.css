@@ -1,0 +1,42 @@
+/* demo.css — 多言語メニュー用 最終版 */
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";margin:0;color:#e6e6e6;background:#0b0e14}
+.wrap{max-width:1100px;margin:0 auto;padding:24px}
+header{position:sticky; top:0; z-index:20; background:rgba(11,14,20,.82); backdrop-filter:saturate(180%) blur(10px); border-bottom:1px solid #1f2430}
+h1{font-size:24px;margin:0}
+.top{display:flex;gap:8px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.tab{padding:8px 12px;border:1px solid #2a3342;border-radius:999px;cursor:pointer;background:#0f1422;color:#e6e6e6}
+.tab.active{background:#3b82f6;color:#fff;border-color:#3b82f6}
+
+.search{margin:12px 0; width:100%; max-width:520px; padding:10px 12px; border-radius:10px; border:1px solid #2a3342; background:#0f1422; color:#e6e6e6}
+.status{font-size:12px;color:#9096a0}
+
+.cat{margin:18px 0 8px;font-size:18px}
+.grid{display:grid;gap:10px}
+@media(min-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+
+.card{border:1px solid #2a3342;border-radius:12px;padding:12px;background:#0f1422; opacity:0; transform:translateY(8px); transition:opacity .4s ease, transform .4s ease}
+.card.show{opacity:1; transform:none}
+.card img{max-width:100%; border-radius:8px; margin:6px 0}
+.name{font-weight:700}
+.desc{color:#b0b6bf}
+.meta{font-size:12px;color:#9096a0;margin-top:4px}
+.badges{display:flex;gap:6px;flex-wrap:wrap;margin-top:4px}
+.badge{display:inline-block;padding:2px 6px;border:1px solid #2a3342;border-radius:999px;font-size:11px}
+
+.toolbar{display:flex;gap:8px;align-items:center}
+.btn{padding:8px 12px;border-radius:999px;border:1px solid #3b82f6;background:#0f1422;color:#e6e6e6;text-decoration:none}
+
+.skel{display:grid;gap:10px}
+@media(min-width:900px){.skel{grid-template-columns:repeat(2,1fr)}}
+.skel .row{height:120px;background:linear-gradient(90deg,#101626,#0f1422,#101626); border-radius:12px; animation:shimmer 1.2s infinite; border:1px solid #2a3342}
+@keyframes shimmer{0%{background-position:-200px 0}100%{background-position:calc(200px + 100%) 0}}
+
+@media (prefers-color-scheme: light){
+  body{color:#111;background:#fff}
+  header{background:rgba(255,255,255,.85); border-bottom-color:#e5e7eb}
+  .search{background:#fff; color:#111; border-color:#e5e7eb}
+  .card{background:#fff; border-color:#e5e7eb}
+  .badge{border-color:#e5e7eb}
+}

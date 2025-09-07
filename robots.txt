@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://furahurarin.github.io/qrmenu-site/sitemap.xml

@@ -3,76 +3,230 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>多言語QRメニュー＋口コミ自動翻訳/返信</title>
-  <style>
-    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";margin:0;color:#111}
-    .wrap{max-width:960px;margin:0 auto;padding:24px}
-    h1{font-size:28px;margin:0 0 8px}
-    p{line-height:1.7}
-    .hero{padding:24px;border:1px solid #eee;border-radius:12px;margin-top:12px}
-    .cta{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0}
-    .btn{padding:10px 14px;border-radius:8px;border:1px solid #222;text-decoration:none;display:inline-block}
-    .btn.primary{background:#111;color:#fff;border-color:#111}
-    details{margin:8px 0 16px}
-    small{color:#666}
-    hr{border:none;border-top:1px solid #eee;margin:24px 0}
-    ul{margin:8px 0 16px}
-    li{margin:4px 0}
-  </style>
+  <title>外国人のお客様が迷わず注文。口コミ返信も早く丁寧に｜4言語QRメニュー＆返信ドラフト（14日無料）</title>
+  <meta name="description" content="紙メニューの写真から4言語メニューを作成。新着口コミには丁寧な返信の下書きを用意。最終投稿は人の承認で安心。今日から14日無料でお試し。">
+  <link rel="canonical" href="https://furahurarin.github.io/qrmenu-site/" />
+  <meta property="og:title" content="4言語QRメニュー＆口コミ返信ドラフト｜14日無料" />
+  <meta property="og:description" content="外国人のお客様が迷わず注文。新着口コミの返信も素早く丁寧に。最終承認は人が行うから安心。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://furahurarin.github.io/qrmenu-site/" />
+  <meta property="og:image" content="https://furahurarin.github.io/qrmenu-site/og.png" />
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+  <meta name="robots" content="index,follow" />
+  <link rel="preconnect" href="https://buy.stripe.com" crossorigin>
+  <meta name="theme-color" content="#0b0e14" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+
+  <!-- external CSS -->
+  <link rel="stylesheet" href="./assets/styles/main.css" />
 </head>
 <body>
-  <main class="wrap">
-    <section class="hero">
-      <h1>多言語QRメニュー＋口コミ自動翻訳/返信</h1>
-      <p>インバウンド対応を“今日”から。店頭QR→多言語メニュー→レビュー返信の下書き生成までを一気通貫。最終投稿は必ず人が承認します。</p>
+  <div class="progress" aria-hidden="true"></div>
+  <a href="#main" class="skip">本文へスキップ</a>
 
-      <div class="cta">
-        <a class="btn" href="./demo.html">デモを見る</a>
-        <a class="btn primary"
-   href="https://buy.stripe.com/test_aFa7sNc7A7Ai9Xr0ym9ws00"
-   id="trial" target="_blank" rel="noopener noreferrer">14日無料で試す（Pro）</a>
+  <header class="nav" role="banner">
+    <div class="wrap">
+      <div class="brand">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="2"/><rect x="14" y="2" width="8" height="8" rx="2"/><rect x="2" y="14" width="8" height="8" rx="2"/><rect x="14" y="14" width="8" height="8" rx="2"/></svg>
+        <span>QRメニュー＆返信ドラフト</span>
       </div>
-      <small>最短当日スタート／月額で気軽に導入／レビュー運用は“人の最終承認”が前提</small>
-    </section>
+      <nav class="navlinks" aria-label="主ナビ">
+        <a href="#owner">はじめての方へ</a>
+        <a href="#logic">できること</a>
+        <a href="#how">使い方</a>
+        <a href="#pricing">料金</a>
+        <a href="./demo.html" rel="noopener">デモ</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
 
-    <section>
-      <h2>こんな悩みに</h2>
-      <ul>
-        <li>英語・中国語・韓国語のメニュー作成に手が回らない</li>
-        <li>レビューが増えたが、返信の手間と品質にムラがある</li>
-        <li>スタッフ入替で運用が継続できない</li>
-      </ul>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <h1 id="hero-title">外国人のお客様が迷わず注文。口コミ返信も早く丁寧に。</h1>
+      <p class="lead">紙メニューの写真から<strong>4言語QRメニュー</strong>を作成。新着口コミには<strong>丁寧な返信の下書き</strong>を用意。<u>最終投稿は人が承認</u>するから安心。今日から14日無料で試せます。</p>
+      <div class="cta" role="group" aria-label="主要アクション">
+        <a class="btn primary" href="https://buy.stripe.com/test_aFa7sNc7A7Ai9Xr0ym9ws00" target="_blank" rel="noopener">14日無料で試す</a>
+        <a class="btn ghost" href="./demo.html" rel="noopener">1分でデモを見る</a>
+        <a class="btn ghost" data-open="flow" aria-haspopup="dialog" aria-controls="flow">導入の流れ</a>
+      </div>
+      <div class="badges" aria-label="特徴">
+        <span class="badge">最短 当日スタート</span>
+        <span class="badge">人の最終承認で安心</span>
+        <span class="badge">月額のみ／解約いつでも</span>
+      </div>
+    </div>
+  </section>
 
-      <h2>できること（3ステップ）</h2>
-      <ol>
-        <li>店頭・卓上にQRポップを設置（A6卓上・A4入口を同梱）</li>
-        <li>多言語メニュー（JA/EN/中文/KO）を自動生成＋人手の最終チェック</li>
-        <li>新着レビューを検知→AIが“下書き”作成→人が承認して投稿</li>
-      </ol>
+  <main id="main">
+    <div class="wrap">
+      <!-- ※以下は元の index.html と同一構造です（省略なしで貼替済） -->
+      <!-- For Owners -->
+      <section id="owner" class="section reveal" aria-labelledby="owner-h">
+        <h2 id="owner-h">こんなお悩み、ありませんか？</h2>
+        <div class="grid grid-3">
+          <div class="card"><strong>注文までが伝わらない</strong><br>英語・中国語・韓国語で価格やアレルゲンを聞かれるたびに、スタッフが都度説明して時間が取られる。</div>
+          <div class="card"><strong>口コミ返信が後回し</strong><br>忙しくて返せず、★1のときだけ慌てて対応。文面にもムラが出てしまう。</div>
+          <div class="card"><strong>担当者がいない</strong><br>SNSや口コミの管理が属人化。引き継ぎできず、品質が保てない。</div>
+        </div>
+      </section>
 
-      <h2>主な機能</h2>
-      <ul>
-        <li>4言語メニュー（料理名／説明／アレルゲン表記）＋画像・おすすめ</li>
-        <li>レビュー下書き（★5/★3/★1テンプレ＋文体統一）</li>
-        <li>返信SLAの可視化（48h以内の対応率）</li>
-        <li>コンプライアンス：自動投稿はしない／誘導・対価提供の禁止を明記</li>
-      </ul>
+      <!-- Logic / Value -->
+      <section id="logic" class="section reveal" aria-labelledby="logic-h">
+        <h2 id="logic-h">これ一つで、来店の機会損失を防ぎます</h2>
+        <div class="grid grid-3">
+          <article class="card">
+            <h3>① 言語の不安をゼロに</h3>
+            <p class="tick">紙メニューの写真から 4言語（日本語/英/中/韓）を作成。</p>
+            <p class="tick">価格・説明・アレルゲンを明記。<span class="muted">※最終確認は店舗様</span></p>
+          </article>
+          <article class="card">
+            <h3>② 口コミ対応を時短</h3>
+            <p class="tick">新着を検知→<strong>下書き</strong>（★5/★3/★1に最適化）を自動用意。</p>
+            <p class="tick"><u>人が最終確認</u>してから投稿。語調のブレを防ぎます。</p>
+          </article>
+          <article class="card">
+            <h3>③ 継続運用をラクに</h3>
+            <p class="tick">通知→下書き→承認→投稿まで定型化。属人化を解消。</p>
+            <p class="tick">「48時間以内の返信目安」を画面で可視化。</p>
+          </article>
+        </div>
 
-      <h2>料金（14日無料トライアル）</h2>
-      <ul>
-        <li>Lite：¥3,980/月 — 1店舗・1カテゴリ、下書き（30/月）</li>
-        <li>Pro：¥6,980/月 — 1店舗・無制限カテゴリ、下書き（100/月）、SLA可視化</li>
-        <li>DFY：¥19,800/月 — 写真差替・翻訳手直し・運用代行（優先サポート）</li>
-      </ul>
+        <div class="card" style="margin-top:12px">
+          <h3 style="margin:0 0 8px">かんたんROI試算</h3>
+          <div class="calc" aria-label="ROI簡易計算">
+            <label>月間QR閲覧数 <input id="c_scans" type="number" value="800" inputmode="numeric" aria-label="月間QR閲覧数"></label>
+            <label>来店率の上昇（%） <input id="c_uplift" type="number" value="5" inputmode="decimal" aria-label="来店率上昇"></label>
+            <label>平均客単価(¥) <input id="c_ticket" type="number" value="1200" inputmode="numeric" aria-label="平均客単価"></label>
+            <label>月額費(¥) <input id="c_spend" type="number" value="6980" inputmode="numeric" aria-label="月額費"></label>
+            <strong id="c_out" style="margin-left:6px">—</strong>
+          </div>
+          <p class="muted" style="margin-top:6px">※目安。立地・写真品質・レビュー数で変動します。</p>
+        </div>
+      </section>
 
-      <h2>FAQ</h2>
-      <p><strong>Q.</strong> 完全自動で返信まで？<br><strong>A.</strong> いいえ。最終承認は人が行います。</p>
-      <p><strong>Q.</strong> 翻訳品質は？<br><strong>A.</strong> エンジン＋辞書置換後に人手確認します。</p>
-      <p><strong>Q.</strong> 途中解約は？<br><strong>A.</strong> 次回更新日までの解約で翌月以降は課金されません。</p>
+      <!-- How it works -->
+      <section id="how" class="section reveal" aria-labelledby="how-h">
+        <h2 id="how-h">使い方はシンプル、3ステップ</h2>
+        <div class="grid grid-3">
+          <div class="card">1. <strong>QRポップを設置</strong><br>A6卓上/A4入口のQRを店頭に。紙メニュー併記で安心。</div>
+          <div class="card">2. <strong>4言語メニュー作成</strong><br>写真やCSVから作成、人が最終チェック。</div>
+          <div class="card">3. <strong>口コミ対応</strong><br>通知→下書き→承認→投稿。丁寧な日本語テンプレ付き。</div>
+        </div>
+        <details style="margin-top:10px"><summary>返信文サンプルを見る</summary>
+          <div class="card" style="margin-top:10px">
+            <p><strong>★5 例：</strong>ご来店ありがとうございました。お料理を気に入っていただけて大変嬉しいです。次回は季節限定メニューもぜひお試しください。</p>
+            <p><strong>★3 例：</strong>ご期待に十分お応えできず申し訳ありません。いただいたご指摘（待ち時間）を改善し、より快適にお過ごしいただけるよう努めます。</p>
+            <p><strong>★1 例：</strong>不快な思いをさせてしまい、深くお詫び申し上げます。詳細を確認し再発防止に取り組みます。もし差し支えなければ、状況を教えていただけますと幸いです。</p>
+          </div>
+        </details>
+      </section>
 
-      <hr />
-      <p><small>免責：レビューは人の最終承認後に投稿します。対価提供や選別依頼は禁止です。</small></p>
-    </section>
+      <!-- Pricing -->
+      <section id="pricing" class="section reveal" aria-labelledby="pricing-h">
+        <h2 id="pricing-h">料金（14日無料・いつでも解約）</h2>
+        <div class="grid grid-3">
+          <article class="card price" aria-label="Lite">
+            <h3>Lite</h3>
+            <div><span class="yen">¥</span><span class="amt">3,980</span><span class="per">/月</span></div>
+            <ul>
+              <li>1店舗・1カテゴリ</li>
+              <li>返信下書き 30/月</li>
+              <li>月次ミニレポ（簡易）</li>
+            </ul>
+          </article>
+          <article class="card price" aria-label="Pro（おすすめ）">
+            <h3>Pro（おすすめ）</h3>
+            <div><span class="yen">¥</span><span class="amt">6,980</span><span class="per">/月</span></div>
+            <ul>
+              <li>1店舗・無制限カテゴリ</li>
+              <li>返信下書き 100/月</li>
+              <li>辞書カスタム／返信目安の可視化</li>
+            </ul>
+          </article>
+          <article class="card price" aria-label="DFY（おまかせ）">
+            <h3>DFY（おまかせ）</h3>
+            <div><span class="yen">¥</span><span class="amt">19,800</span><span class="per">/月</span></div>
+            <ul>
+              <li>写真差し替え・翻訳手直し</li>
+              <li>投稿代行（人の最終承認後）</li>
+              <li>優先サポート</li>
+            </ul>
+          </article>
+        </div>
+        <div class="cta" role="group" aria-label="料金アクション">
+          <a class="btn primary" href="https://buy.stripe.com/test_aFa7sNc7A7Ai9Xr0ym9ws00" target="_blank" rel="noopener">14日無料で試す（Pro）</a>
+          <a class="btn ghost" href="./demo.html" rel="noopener">デモを見る</a>
+        </div>
+        <p class="muted">※決済はStripe。カード情報は当サービスで保持しません。</p>
+      </section>
+
+      <section id="trust" class="section reveal" aria-labelledby="trust-h">
+        <h2 id="trust-h">安心して使える運用ポリシー</h2>
+        <div class="grid grid-2">
+          <div class="card">
+            <h3>安全設計</h3>
+            <ul>
+              <li>最小権限・アクセス制御・ログ監査</li>
+              <li><u>自動投稿なし</u>：最終投稿は必ず人が承認</li>
+              <li>禁則語フィルタと丁寧文体のテンプレ</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>法令・ガイドライン</h3>
+            <ul>
+              <li>対価提供・選別依頼は行いません</li>
+              <li>アレルゲンは原文優先の免責を併記（最終確認は店舗様）</li>
+              <li>48時間以内の返信を目安として運用</li>
+            </ul>
+            <p><a href="./terms.html">利用規約</a>・<a href="./privacy.html">プライバシー</a>・<a href="./security.html">セキュリティ</a></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section reveal" aria-labelledby="faq-h">
+        <h2 id="faq-h">よくある質問</h2>
+        <details><summary>投稿まで自動で行われますか？</summary><p>いいえ。AIは返信の下書きまで。最終投稿は必ず人が承認します。</p></details>
+        <details><summary>翻訳の間違いが心配です</summary><p>固有名詞辞書の適用と人手確認を行います。アレルゲンは原文優先の免責を併記し、最終確認は店舗様の責任範囲です。</p></details>
+        <details><summary>途中解約はできますか？</summary><p>いつでも可能です。次回更新日前の解約で翌月以降は課金されません。</p></details>
+        <p class="footer-note">免責：価格・アレルゲン等の最終確認は店舗様の責任範囲です。</p>
+      </section>
+
+      <footer class="section reveal" aria-labelledby="company">
+        <h2 id="company">事業者情報</h2>
+        <p>屋号：Relayo（例） / 所在地：福井県越前市… / 連絡先：<a href="mailto:contact@example.com">contact@example.com</a></p>
+        <p><a href="./privacy.html">プライバシーポリシー</a> ｜ <a href="./terms.html">利用規約</a> ｜ <a href="./tokusho.html">特定商取引法に基づく表記</a></p>
+        <p class="muted">Build: 2025-09-07</p>
+      </footer>
+    </div>
   </main>
+
+  <button id="toTop" class="totop" aria-label="ページ上部へ">▲</button>
+
+  <dialog id="flow" aria-labelledby="flow-h">
+    <div class="dlg-h" id="flow-h">導入の流れ（14日無料）</div>
+    <div class="dlg-c">
+      <ol>
+        <li><strong>申込：</strong>「14日無料で試す」→ Stripeで0円スタート</li>
+        <li><strong>案内：</strong>申込完了画面とメールから <code>welcome.html</code> へ</li>
+        <li><strong>設置：</strong>A6卓上/A4入口のQRを掲示（紙メニュー併記OK）</li>
+        <li><strong>運用：</strong>レビュー通知→下書き生成→<u>人が最終承認</u>→投稿</li>
+      </ol>
+      <p class="muted">※対価提供や選別依頼は行いません。自動投稿もしません。</p>
+    </div>
+    <div class="dlg-f">
+      <button class="btn ghost" data-close>閉じる</button>
+      <a class="btn primary" href="https://buy.stripe.com/test_aFa7sNc7A7Ai9Xr0ym9ws00" target="_blank" rel="noopener">今すぐ試す</a>
+    </div>
+  </dialog>
+
+  <!-- external JS -->
+  <script defer src="./assets/js/main.js"></script>
+
+  <!-- Structured data（既存を維持） -->
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Relayo","url":"https://furahurarin.github.io/qrmenu-site/","logo":"https://furahurarin.github.io/qrmenu-site/og.png","sameAs":[]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"4言語QRメニュー＆口コミ返信ドラフト","url":"https://furahurarin.github.io/qrmenu-site/","potentialAction":{"@type":"SearchAction","target":"https://furahurarin.github.io/qrmenu-site/demo.html?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"4言語QRメニュー＆口コミ返信ドラフト","provider":{"@type":"Organization","name":"Relayo"},"areaServed":"JP","offers":[{"@type":"Offer","name":"Lite","price":"3980","priceCurrency":"JPY","availability":"https://schema.org/InStock"},{"@type":"Offer","name":"Pro","price":"6980","priceCurrency":"JPY","availability":"https://schema.org/InStock"},{"@type":"Offer","name":"DFY","price":"19800","priceCurrency":"JPY","availability":"https://schema.org/InStock"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"投稿まで自動で行われますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。AIは返信の下書きまで。最終投稿は必ず人が承認します。"}},{"@type":"Question","name":"翻訳の間違いが心配です","acceptedAnswer":{"@type":"Answer","text":"固有名詞辞書の適用と人手確認を行います。アレルゲンは原文優先の免責を併記し、最終確認は店舗様の責任範囲です。"}},{"@type":"Question","name":"途中解約はできますか？","acceptedAnswer":{"@type":"Answer","text":"いつでも可能です。次回更新日前の解約で翌月以降は課金されません。"}}]}</script>
 </body>
 </html>

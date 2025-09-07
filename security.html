@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>セキュリティと運用ポリシー</title>
+  <meta name="description" content="多言語QRメニュー＋口コミ自動翻訳/返信におけるセキュリティ設計と運用ポリシー（最小権限・アクセス制御・行動ログ監査、SLA 目標、データ取り扱い方針）を定めます。">
+  <link rel="stylesheet" href="./assets/styles/pages.css" />
+</head>
+<body>
+  <main class="wrap">
+    <h1>セキュリティと運用ポリシー</h1>
+
+    <h2>基本姿勢</h2>
+    <ul>
+      <li>最小権限・アクセス制御・行動ログの監査を実施</li>
+      <li>外部ベンダ（決済：Stripe 等）の利用によりカード情報は非保持</li>
+      <li>レビューはAIの下書き生成のみ。<strong>最終承認は人が実施</strong>し、自動投稿は行いません</li>
+    </ul>
+
+    <h2>SLA（目標）</h2>
+    <ul>
+      <li>新着レビューへの初回返信：48時間以内</li>
+      <li>問い合わせへの初回応答：24時間以内</li>
+    </ul>
+
+    <h2>データの扱い</h2>
+    <ul>
+      <li>メニューCSV・レビュー草案は権限管理された環境で取り扱い</li>
+      <li>アレルゲン・価格等の最終確認は店舗側の責任範囲</li>
+    </ul>
+
+    <p><a href="./index.html">トップへ戻る</a></p>
+  </main>
+</body>
+</html>
