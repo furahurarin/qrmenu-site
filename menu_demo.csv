@@ -1,0 +1,13 @@
+category,item_id,name_ja,desc_ja,price,allergens,img_url,flags,name_en,name_zh,name_ko,desc_en,desc_zh,desc_ko
+定番,A001,唐揚げ,にんにく醤油で下味をつけた鶏もも肉のから揚げ。,650,"小麦, 卵",,recommended,Karaage (Fried Chicken),炸鸡块,카라아게,Soy-garlic marinated fried chicken thigh.,蒜香酱油腌制的鸡腿炸物。,마늘간장으로 밑간한 닭다리살 튀김.
+定番,A002,枝豆,塩ゆでの定番おつまみ。,380,-,,,Edamame,毛豆,에다마메,Salt-boiled young soybeans.,盐水煮毛豆。,소금 삶은 풋콩.
+定番,A003,出汁巻き玉子,丁寧に巻き上げた出汁香る玉子焼き。,580,卵,,,Japanese Omelette (Dashimaki),日式高汤煎蛋,다시마키(일식 달걀말이),Rolled omelette with dashi stock.,다시 육수로 풍미를 더한 달걀말이.,加入高汤的日式蛋卷。
+定番,A004,ポテトフライ,皮付きホクホク。,480,-,,kids,French Fries,薯条,감자튀김,Crispy fries.,酥脆薯条。,바삭한 감자튀김.
+定番,A005,おでん盛り合わせ,大根・玉子・厚揚げなど。,780,"卵, 大豆",,,Oden Assortment,关东煮拼盘,오뎅 모둠,"Assorted oden: daikon, egg, tofu, etc.",萝卜、鸡蛋、油豆腐等关东煮拼盘。,"무, 계란, 두부 등 모둠 오뎅."
+定番,A006,焼き鳥（ねぎま）,国産鶏のねぎま串。,180,-,,,Yakitori (Negima),葱烤鸡串,네기마(닭꼬치),Chicken & scallion skewer.,鸡葱相间的串烧。,닭고기와 파를 번갈아 꽂은 꼬치.
+定番,A007,海老天,衣はサクッと、中はぷりぷり。,320,"小麦, えび",,,Shrimp Tempura,天妇罗虾,새우 덴푸라,"Crispy batter, juicy shrimp.",外酥里嫩的天妇罗虾。,"바삭한 튀김옷, 탱탱한 새우."
+定番,A008,焼きおにぎり,香ばしい味噌だれ。,300,"小麦, 大豆",,vegan?,Grilled Rice Ball (Miso),味噌酱烤饭团,구운 주먹밥(미소),Grilled rice ball with miso glaze.,味噌酱烤制的饭团。,미소된장 소스로 구운 주먹밥.
+定番,A009,豚汁,具だくさんのあったか味噌汁。,450,"大豆, 豚肉",,,Pork Miso Soup (Tonjiru),猪肉味噌汤,돈지루,Hearty miso soup with pork & veggies.,猪肉与蔬菜的味噌汤。,돼지고기와 채소가 듬뿍 들어간 된장국.
+定番,A010,冷やし豆腐,こだわりの醤油で。,380,大豆,,vegan,Chilled Tofu,凉拌豆腐,차가운 두부,Chilled tofu with special soy sauce.,配特制酱油的凉拌豆腐。,간장과 함께 차갑게 즐기는 두부.
+定番,A011,グリーンサラダ,自家製ドレッシング。,520,小麦,,vegetarian,Green Salad,田园沙拉,그린 샐러드,Green salad with house dressing.,自制沙拉酱。,자체 드레싱의 샐러드.
+定番,A012,抹茶ラテ,ほんのり甘く、香り豊か。,480,乳,,drink,Matcha Latte,抹茶拿铁,말차 라떼,"Mildly sweet, aromatic matcha latte.",微甜香浓抹茶拿铁。,은은한 단맛의 말차 라떼.
